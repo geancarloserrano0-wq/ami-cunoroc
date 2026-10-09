@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMI y Pensamiento Crítico Digital | USAC-CUNOROC</title>
+<meta name="description" content="Recurso educativo interactivo sobre Alfabetización Mediática e Informacional (AMI), pensamiento crítico y desinformación en el entorno digital. Incluye autoevaluación y referencias APA. USAC-CUNOROC, Licenciatura en Pedagogía y Administración Educativa.">
+<meta name="author" content="Kevin Geancarlo Rivas Serrano, Obner Alexander Agustín Arriola">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A2540">
+<link rel="canonical" href="https://geancarloserrano0-wq.github.io/ami-cunoroc/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_GT">
+<meta property="og:title" content="AMI y Pensamiento Crítico Digital | USAC-CUNOROC">
+<meta property="og:description" content="Recurso educativo interactivo sobre Alfabetización Mediática e Informacional (AMI), pensamiento crítico y desinformación en el entorno digital. Incluye autoevaluación y referencias APA. USAC-CUNOROC, Licenciatura en Pedagogía y Administración Educativa.">
+<meta property="og:url" content="https://geancarloserrano0-wq.github.io/ami-cunoroc/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AMI y Pensamiento Crítico Digital | USAC-CUNOROC">
+<meta name="twitter:description" content="Recurso educativo interactivo sobre Alfabetización Mediática e Informacional (AMI), pensamiento crítico y desinformación en el entorno digital. Incluye autoevaluación y referencias APA. USAC-CUNOROC, Licenciatura en Pedagogía y Administración Educativa.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "Alfabetización Mediática e Informacional (AMI) y Pensamiento Crítico en el Entorno Digital",
+  "description": "Recurso educativo interactivo sobre Alfabetización Mediática e Informacional (AMI), pensamiento crítico y desinformación en el entorno digital. Incluye autoevaluación y referencias APA. USAC-CUNOROC, Licenciatura en Pedagogía y Administración Educativa.",
+  "inLanguage": "es",
+  "url": "https://geancarloserrano0-wq.github.io/ami-cunoroc/",
+  "learningResourceType": "Recurso educativo interactivo",
+  "educationalLevel": "Educación superior",
+  "teaches": "Alfabetización mediática e informacional, pensamiento crítico mediático, identificación de la desinformación",
+  "author": [
+    {"@type": "Person", "name": "Kevin Geancarlo Rivas Serrano"},
+    {"@type": "Person", "name": "Obner Alexander Agustín Arriola"}
+  ],
+  "provider": {"@type": "CollegeOrUniversity", "name": "Universidad de San Carlos de Guatemala, Centro Universitario de Nor-Occidente (CUNOROC)"}
+}
+</script>
+<style>body{margin:0}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,700;1,6..72,500&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: columna única centrada de 62rem; encabezado institucional, módulo de pestañas, autoevaluación, aparato crítico y declaración de IA, todo sobre tarjetas de cristal. */
+:root {
+  --azul: #0A2540;
+  --azul-2: #0F3560;
+  --azul-3: #164A80;
+  --dorado: #F59E0B;
+  --dorado-claro: #FBBF24;
+  --texto: #EAF1F8;
+  --texto-suave: #B9C9DB;
+  --cristal: rgba(255, 255, 255, 0.075);
+  --cristal-fuerte: rgba(255, 255, 255, 0.13);
+  --borde: rgba(255, 255, 255, 0.2);
+  --ok: #4ADE80;
+  --ok-fondo: rgba(74, 222, 128, 0.14);
+  --error: #FCA5A5;
+  --error-fondo: rgba(248, 113, 113, 0.16);
+  --fuente-titulo: "Newsreader", Georgia, "Times New Roman", serif;
+  --fuente-cuerpo: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --trans: 0.3s ease;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--azul);
+  background-image: linear-gradient(125deg, #0A2540 0%, #0F3560 28%, #12406F 50%, #0C2C4F 74%, #0A2540 100%);
+  background-size: 300% 300%;
+  animation: flujo 45s ease-in-out infinite;
+  color: var(--texto);
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+  line-height: 1.65;
+  min-height: 100%;
+}
+@keyframes flujo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.envoltura { max-width: 62rem; margin-inline: auto; padding-inline: 1rem; padding-block: 1rem 3rem; display: flex; flex-direction: column; gap: 1.5rem; }
+.salto { position: absolute; left: 1rem; top: -4rem; background: var(--dorado); color: var(--azul); padding: .6rem 1rem; border-radius: .4rem; font-weight: 700; z-index: 10; text-decoration: none; transition: top var(--trans); }
+.salto:focus { top: .75rem; }
+:focus-visible { outline: 3px solid var(--dorado-claro); outline-offset: 3px; border-radius: .25rem; }
+
+.cristal {
+  background: var(--cristal);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid var(--borde);
+  border-radius: 1.1rem;
+  box-shadow: 0 10px 34px rgba(3, 12, 26, 0.35);
+}
+h1, h2, h3 { font-family: var(--fuente-titulo); text-wrap: balance; line-height: 1.2; margin: 0; }
+p { margin: 0; }
+a { color: var(--dorado-claro); text-underline-offset: .2em; transition: color var(--trans); }
+a:hover { color: #fff; }
+
+/* Encabezado */
+.encabezado { padding: 1.5rem 1.25rem; display: flex; flex-direction: column; gap: 1.1rem; }
+.institucion { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; }
+.sello { font-weight: 700; letter-spacing: .14em; font-size: .8rem; text-transform: uppercase; background: var(--dorado); color: var(--azul); padding: .3rem .7rem; border-radius: .35rem; }
+.inst-texto { color: var(--texto-suave); font-size: .92rem; min-width: 0; }
+.encabezado h1 { font-size: clamp(1.75rem, 5.2vw, 3rem); font-weight: 700; }
+.encabezado h1 span { color: var(--dorado-claro); }
+.ficha { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: .9rem 1.5rem; margin: 0; }
+.ficha div { min-width: 0; }
+.ficha dt { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dorado-claro); font-weight: 600; }
+.ficha dd { margin: .15rem 0 0; overflow-wrap: anywhere; }
+.objetivo { border-top: 1px solid var(--borde); padding-top: 1rem; }
+.objetivo h2 { font-size: 1.15rem; color: var(--dorado-claro); margin-bottom: .35rem; }
+
+/* Pestañas */
+.modulo { padding: 1.25rem; }
+.modulo > h2 { font-size: clamp(1.3rem, 3.4vw, 1.75rem); margin-bottom: 1rem; }
+.pestanas { display: flex; flex-wrap: wrap; gap: .5rem; border-bottom: 1px solid var(--borde); padding-bottom: .9rem; }
+.pestana {
+  font: inherit; font-weight: 600; color: var(--texto); background: transparent;
+  border: 1px solid var(--borde); border-radius: .6rem; padding: .65rem 1.1rem; cursor: pointer;
+  transition: background var(--trans), color var(--trans), border-color var(--trans), transform var(--trans);
+}
+.pestana:hover { background: var(--cristal-fuerte); border-color: var(--dorado); transform: translateY(-2px); }
+.pestana[aria-selected="true"] { background: var(--dorado); color: var(--azul); border-color: var(--dorado); }
+.panel { padding-top: 1.25rem; display: flex; flex-direction: column; gap: 1.1rem; }
+.panel[hidden] { display: none; }
+.panel.entra { animation: aparece .45s ease both; }
+@keyframes aparece { from { opacity: .0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.definiciones { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; }
+.def { background: var(--cristal-fuerte); border: 1px solid var(--borde); border-radius: .9rem; padding: 1.1rem; display: flex; flex-direction: column; gap: .6rem; min-width: 0; transition: transform var(--trans), border-color var(--trans), background var(--trans); }
+.def:hover { transform: translateY(-3px); border-color: var(--dorado); }
+.def h3 { font-size: 1.25rem; color: var(--dorado-claro); }
+.def .fuente { color: var(--texto-suave); font-size: .9rem; }
+.evolucion { background: var(--cristal); border: 1px solid var(--borde); border-radius: .9rem; padding: 1.2rem; display: flex; flex-direction: column; gap: .7rem; }
+.evolucion h3 { font-size: 1.3rem; }
+.evolucion p { max-width: 68ch; }
+
+/* Acordeón */
+.acordeon { display: flex; flex-direction: column; gap: .7rem; }
+.item { background: var(--cristal-fuerte); border: 1px solid var(--borde); border-radius: .9rem; overflow: hidden; transition: border-color var(--trans); }
+.item:hover { border-color: var(--dorado); }
+.item h3 { font-size: 1.1rem; }
+.disparador {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; text-align: left;
+  font: inherit; font-family: var(--fuente-titulo); font-size: 1.2rem; font-weight: 700; color: var(--texto);
+  background: transparent; border: 0; padding: 1rem 1.1rem; cursor: pointer; transition: background var(--trans), color var(--trans);
+}
+.disparador:hover { background: rgba(245, 158, 11, 0.14); color: #fff; }
+.disparador .marca { flex: none; width: 1.7rem; height: 1.7rem; border-radius: 50%; border: 2px solid var(--dorado); display: grid; place-items: center; color: var(--dorado-claro); font-family: var(--fuente-cuerpo); font-size: 1.1rem; line-height: 1; transition: transform var(--trans), background var(--trans), color var(--trans); }
+.disparador[aria-expanded="true"] .marca { transform: rotate(45deg); background: var(--dorado); color: var(--azul); }
+.cuerpo-item { padding: 0 1.1rem 1.1rem; max-width: 68ch; }
+
+blockquote { margin: 0; padding: 1.2rem 1.3rem; border-left: 5px solid var(--dorado); background: rgba(245, 158, 11, 0.09); border-radius: 0 .9rem .9rem 0; display: flex; flex-direction: column; gap: .7rem; }
+blockquote .tema { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dorado-claro); font-weight: 600; }
+blockquote p { font-family: var(--fuente-titulo); font-style: italic; font-size: clamp(1.1rem, 2.6vw, 1.35rem); line-height: 1.5; }
+blockquote footer { color: var(--texto-suave); font-size: .92rem; }
+
+/* Autoevaluación */
+.intro-quiz { color: var(--texto-suave); max-width: 68ch; margin-bottom: 1.1rem; }
+.marcador { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; align-items: center; justify-content: space-between; margin-bottom: 1.1rem; font-weight: 600; }
+.barra { flex: 1 1 12rem; height: .6rem; background: rgba(255,255,255,.14); border-radius: 1rem; overflow: hidden; }
+.barra i { display: block; height: 100%; width: 0; background: var(--dorado); transition: width .5s ease; }
+.pregunta { border: 1px solid var(--borde); border-radius: .9rem; padding: 1.1rem; margin: 0 0 1rem; background: var(--cristal); min-width: 0; }
+.pregunta legend { font-family: var(--fuente-titulo); font-weight: 700; font-size: 1.15rem; padding-inline: .4rem; max-width: 100%; }
+.pregunta legend small { display: block; font-family: var(--fuente-cuerpo); font-weight: 600; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dorado-claro); }
+.opciones { display: flex; flex-direction: column; gap: .6rem; margin-top: .6rem; }
+.opcion { position: relative; display: flex; gap: .8rem; align-items: flex-start; padding: .8rem .95rem; border: 1px solid var(--borde); border-radius: .7rem; cursor: pointer; background: rgba(255,255,255,.04); transition: background var(--trans), border-color var(--trans), transform var(--trans); }
+.opcion:hover { background: var(--cristal-fuerte); border-color: var(--dorado); transform: translateX(3px); }
+.opcion input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.opcion input:focus-visible + .letra { outline: 3px solid var(--dorado-claro); outline-offset: 3px; }
+.letra { flex: none; width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 2px solid var(--dorado); color: var(--dorado-claro); display: grid; place-items: center; font-weight: 700; font-size: .9rem; transition: background var(--trans), color var(--trans), border-color var(--trans); }
+.texto-op { min-width: 0; overflow-wrap: anywhere; }
+.opcion.elegida { border-color: var(--dorado); background: var(--cristal-fuerte); }
+.opcion.elegida .letra { background: var(--dorado); color: var(--azul); }
+.cerrada { cursor: default; }
+.cerrada:hover { transform: none; background: rgba(255,255,255,.04); border-color: var(--borde); }
+.opcion.correcta { border-color: var(--ok); background: var(--ok-fondo); }
+.opcion.correcta .letra { background: var(--ok); border-color: var(--ok); color: #052e16; }
+.opcion.incorrecta { border-color: var(--error); background: var(--error-fondo); }
+.opcion.incorrecta .letra { background: var(--error); border-color: var(--error); color: #450a0a; }
+.retro { margin-top: .9rem; padding: .9rem 1rem; border-radius: .7rem; border: 1px solid var(--borde); max-width: 70ch; }
+.retro[hidden] { display: none; }
+.retro strong { display: block; margin-bottom: .2rem; }
+.retro.bien { border-color: var(--ok); background: var(--ok-fondo); }
+.retro.mal { border-color: var(--error); background: var(--error-fondo); }
+.resultado { padding: 1rem 1.1rem; border-radius: .9rem; border: 1px solid var(--dorado); background: rgba(245,158,11,.12); margin-bottom: 1rem; }
+.resultado[hidden] { display: none; }
+.boton { font: inherit; font-weight: 700; background: var(--dorado); color: var(--azul); border: 0; border-radius: .6rem; padding: .7rem 1.3rem; cursor: pointer; transition: background var(--trans), transform var(--trans), box-shadow var(--trans); }
+.boton:hover { background: var(--dorado-claro); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(245,158,11,.3); }
+
+/* Aparato crítico */
+.refs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1rem; }
+.refs li { padding-left: 2rem; text-indent: -2rem; overflow-wrap: anywhere; max-width: 72ch; }
+.refs li > * { text-indent: 0; }
+.refs .titulo { font-style: italic; }
+.nota { margin-top: 1rem; color: var(--texto-suave); font-size: .92rem; }
+.ia { padding: 1.25rem; display: flex; flex-direction: column; gap: .8rem; }
+.ia h2 { font-size: clamp(1.2rem, 3vw, 1.5rem); }
+.ia p { max-width: 70ch; }
+.pie { text-align: center; color: var(--texto-suave); font-size: .88rem; padding-block: .5rem; }
+
+@media (max-width: 30rem) {
+  .encabezado, .modulo, .ia { padding: 1rem; }
+  .pestana { flex: 1 1 100%; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<div class="envoltura">
+
+  <header class="cristal encabezado" role="banner">
+    <div class="institucion">
+      <span class="sello">USAC · CUNOROC</span>
+      <span class="inst-texto">Universidad de San Carlos de Guatemala · Centro Universitario de Nor-Occidente</span>
+    </div>
+    <h1>Alfabetización Mediática e Informacional (AMI) y <span>Pensamiento Crítico</span> en el Entorno Digital</h1>
+    <dl class="ficha">
+      <div><dt>Carrera</dt><dd>Licenciatura en Pedagogía y Administración Educativa</dd></div>
+      <div><dt>Curso</dt><dd>Tecnología y Procesamiento Automático de Datos</dd></div>
+      <div><dt>Autores</dt><dd>Kevin Geancarlo Rivas Serrano · Obner Alexander Agustín Arriola</dd></div>
+    </dl>
+    <div class="objetivo">
+      <h2>Objetivo de aprendizaje</h2>
+      <p>Promover la comprensión crítica de los medios digitales, el desarrollo de competencias para identificar la desinformación y el uso ético de la información en el ámbito educativo.</p>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1" style="display:flex;flex-direction:column;gap:1.5rem;">
+
+    <section class="cristal modulo" aria-labelledby="t-contenido">
+      <h2 id="t-contenido">Contenido teórico</h2>
+      <div class="pestanas" role="tablist" aria-label="Secciones del contenido teórico">
+        <button class="pestana" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true" tabindex="0">Conceptos y Evolución</button>
+        <button class="pestana" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Componentes y Citas Clave</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+        <div class="definiciones">
+          <article class="def">
+            <h3>Alfabetización Mediática e Informacional (AMI/MIL)</h3>
+            <p>«La alfabetización mediática e informacional dota a los ciudadanos de las competencias necesarias para comprender las funciones de los medios de comunicación y otros proveedores de información, evaluar críticamente sus contenidos y tomar decisiones informadas como usuarios y productores de información».</p>
+            <p class="fuente">(UNESCO, 2021, p. 14)</p>
+          </article>
+          <article class="def">
+            <h3>Pensamiento Crítico Mediático</h3>
+            <p>Capacidad analítica del individuo para deconstruir mensajes mediáticos, identificar sesgos, reconocer la intención del emisor, discernir la veracidad del contenido y evaluar el impacto ético y social de la información consumida y compartida.</p>
+            <p class="fuente">(Buckingham, 2019, p. 42)</p>
+          </article>
+          <article class="def">
+            <h3>Desinformación e Infodemia</h3>
+            <p>Conceptos sistematizados por la Organización Mundial de la Salud (OMS) y la UNESCO para describir la sobreabundancia de información (falsa, inexacta o manipulada) que se propaga rápidamente a través de entornos digitales, afectando la toma de decisiones colectiva y la confianza en instituciones.</p>
+          </article>
+        </div>
+        <article class="evolucion">
+          <h3>Evolución de la alfabetización mediática en el entorno digital</h3>
+          <p>La alfabetización mediática ha pasado de enfocarse únicamente en el análisis crítico de los medios de comunicación tradicionales (prensa, radio, televisión) al desarrollo de competencias críticas en plataformas digitales e hiperconectadas.</p>
+          <p>Según Buckingham (2019), la alfabetización digital no debe limitarse al dominio técnico o instrumental del software y dispositivos; requiere comprender la economía política de las plataformas, los algoritmos de recomendación y las dinámicas de circulación de la información.</p>
+        </article>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
+        <p>Componentes sustantivos de la alfabetización mediática (UNESCO, 2021; Kellner &amp; Share, 2019):</p>
+        <div class="acordeon">
+          <div class="item">
+            <h3><button class="disparador" id="ac-b1" aria-expanded="true" aria-controls="ac-p1"><span>Acceso y Evaluación Crítica</span><span class="marca" aria-hidden="true">+</span></button></h3>
+            <div class="cuerpo-item" id="ac-p1" role="region" aria-labelledby="ac-b1"><p>Habilidades para buscar, contrastar y verificar la validez, autoridad y sesgo de la información antes de asumirla como cierta.</p></div>
+          </div>
+          <div class="item">
+            <h3><button class="disparador" id="ac-b2" aria-expanded="false" aria-controls="ac-p2"><span>Creación y Expresión Ética</span><span class="marca" aria-hidden="true">+</span></button></h3>
+            <div class="cuerpo-item" id="ac-p2" role="region" aria-labelledby="ac-b2" hidden><p>Producción responsable de contenidos digitales, considerando los derechos de autor, el respeto a la privacidad y las implicaciones éticas de la difusión masiva.</p></div>
+          </div>
+          <div class="item">
+            <h3><button class="disparador" id="ac-b3" aria-expanded="false" aria-controls="ac-p3"><span>Participación Ciudadana</span><span class="marca" aria-hidden="true">+</span></button></h3>
+            <div class="cuerpo-item" id="ac-p3" role="region" aria-labelledby="ac-b3" hidden><p>Uso de los medios y entornos digitales para el ejercicio de la democracia, la inclusión social y la defensa de los derechos humanos.</p></div>
+          </div>
+        </div>
+
+        <blockquote>
+          <span class="tema">Sobre la dimensión crítica de la tecnología</span>
+          <p>«La alfabetización mediática crítica enseña a los estudiantes a dudar de la neutralidad de los medios digitales, analizando cómo las estructuras de poder, los algoritmos y los intereses comerciales condicionan lo que vemos y creemos en Internet».</p>
+          <footer>(Kellner &amp; Share, 2019, p. 18)</footer>
+        </blockquote>
+        <blockquote>
+          <span class="tema">Sobre el rol de la educación frente a la desinformación</span>
+          <p>«Combatir la desinformación mediante restricciones técnicas es insuficiente; la respuesta estructural más efectiva radica en empoderar a las personas mediante la alfabetización mediática para que actúen como filtros críticos de la información».</p>
+          <footer>(UNESCO, 2021, p. 28)</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="cristal modulo" aria-labelledby="t-quiz">
+      <h2 id="t-quiz">Autoevaluación formativa</h2>
+      <p class="intro-quiz">Elija una opción en cada pregunta. La retroalimentación aparece de inmediato, tanto si acierta como si no.</p>
+      <div class="marcador" aria-live="polite">
+        <span id="estado-quiz">Respondidas: 0 de 4 · Aciertos: 0</span>
+        <div class="barra" aria-hidden="true"><i id="progreso"></i></div>
+      </div>
+      <div class="resultado" id="resultado" role="status" hidden></div>
+      <form id="quiz" novalidate></form>
+      <button type="button" class="boton" id="reiniciar">Reiniciar autoevaluación</button>
+    </section>
+
+    <section class="cristal modulo" aria-labelledby="t-refs">
+      <h2 id="t-refs">Aparato crítico: referencias bibliográficas</h2>
+      <ul class="refs">
+        <li><span>Buckingham, D. (2019). </span><span class="titulo">The media education manifesto</span><span>. Polity Press.</span></li>
+        <li><span>Kellner, D., &amp; Share, J. (2019). </span><span class="titulo">The critical media literacy guide: Engaging media and transforming education</span><span>. Brill / Sense. </span><a href="https://doi.org/10.1163/9789004404533" target="_blank" rel="noopener noreferrer">https://doi.org/10.1163/9789004404533</a></li>
+        <li><span>Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura. (2021). </span><span class="titulo">Alfabetización mediática e informacional: Currículo para docentes y educadores</span><span> (2.ª ed.). UNESCO. </span><a href="https://unesdoc.unesco.org/ark:/48223/pf0000379242" target="_blank" rel="noopener noreferrer">https://unesdoc.unesco.org/ark:/48223/pf0000379242</a></li>
+      </ul>
+      <p class="nota">Formato APA, 7.ª edición. Los enlaces se abren en una pestaña nueva.</p>
+    </section>
+
+    <section class="cristal ia" aria-labelledby="t-ia">
+      <h2 id="t-ia">Declaración ética de uso de inteligencia artificial</h2>
+      <p>El contenido teórico de este recurso (definiciones, componentes, citas textuales y referencias) fue seleccionado, curado y validado por sus autores, Kevin Geancarlo Rivas Serrano y Obner Alexander Agustín Arriola, a partir de las fuentes bibliográficas citadas. La autoría intelectual y la responsabilidad académica del contenido son humanas.</p>
+      <p>Se utilizó Claude, un asistente de inteligencia artificial desarrollado por Anthropic, únicamente como apoyo en la codificación del sitio (HTML, CSS y JavaScript). Claude no generó ni modificó el contenido teórico validado. Los autores revisaron el resultado antes de su presentación.</p>
+    </section>
+  </main>
+
+  <footer class="pie">USAC · CUNOROC · Licenciatura en Pedagogía y Administración Educativa · Tecnología y Procesamiento Automático de Datos</footer>
+</div>
+
+<script>
+(function () {
+  /* ---------- Pestañas ---------- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function activar(tab, enfocar) {
+    tabs.forEach(function (t) {
+      var sel = t === tab;
+      t.setAttribute('aria-selected', sel ? 'true' : 'false');
+      t.tabIndex = sel ? 0 : -1;
+      var p = document.getElementById(t.getAttribute('aria-controls'));
+      p.hidden = !sel;
+      if (sel) { p.classList.remove('entra'); void p.offsetWidth; p.classList.add('entra'); }
+    });
+    if (enfocar) tab.focus();
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { activar(tab, false); });
+    tab.addEventListener('keydown', function (e) {
+      var n = null;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') n = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') n = tabs[0];
+      else if (e.key === 'End') n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); activar(n, true); }
+    });
+  });
+
+  /* ---------- Acordeón ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('.disparador'), function (b) {
+    b.addEventListener('click', function () {
+      var abierto = b.getAttribute('aria-expanded') === 'true';
+      b.setAttribute('aria-expanded', abierto ? 'false' : 'true');
+      document.getElementById(b.getAttribute('aria-controls')).hidden = abierto;
+    });
+  });
+
+  /* ---------- Autoevaluación ---------- */
+  var preguntas = [
+    {
+      t: 'Según la UNESCO (2021), ¿cuál es el objetivo principal de la Alfabetización Mediática e Informacional?',
+      o: [
+        { x: 'Aprender a programar software y reparar dispositivos informáticos.', r: 'Esa opción describe un dominio técnico. En la definición de la UNESCO (2021, p. 14), la AMI se orienta a comprender las funciones de los medios, evaluar críticamente sus contenidos y tomar decisiones informadas, no a programar ni a reparar equipos.' },
+        { x: 'Dotar a los ciudadanos de competencias para comprender medios, evaluar contenidos críticamente y tomar decisiones informadas.', c: true, r: 'Según la UNESCO (2021, p. 14), la AMI dota a los ciudadanos de las competencias para comprender las funciones de los medios y otros proveedores de información, evaluar críticamente sus contenidos y tomar decisiones informadas como usuarios y productores de información.' },
+        { x: 'Restringir técnicamente el acceso a redes sociales.', r: 'La AMI no se basa en restringir el acceso. La UNESCO (2021, p. 28) señala que combatir la desinformación mediante restricciones técnicas es insuficiente y que la alfabetización mediática empodera a las personas.' }
+      ]
+    },
+    {
+      t: 'Según Buckingham (2019), ¿en qué debe enfocarse la alfabetización digital para no quedarse en lo instrumental?',
+      o: [
+        { x: 'En aprender el uso de atajos de teclado y navegadores.', r: 'Eso es justamente el dominio técnico o instrumental. Buckingham (2019) sostiene que la alfabetización digital no debe limitarse al manejo de software y dispositivos.' },
+        { x: 'En memorizar lenguajes de programación front-end.', r: 'Memorizar lenguajes de programación también es un enfoque instrumental. Buckingham (2019) plantea ir más allá del dominio técnico.' },
+        { x: 'En comprender la economía política de las plataformas, algoritmos e intereses detrás de la información.', c: true, r: 'Buckingham (2019) indica que la alfabetización digital requiere comprender la economía política de las plataformas, los algoritmos de recomendación y las dinámicas de circulación de la información.' }
+      ]
+    },
+    {
+      t: '¿Cuáles son las tres dimensiones sustantivas de la AMI señaladas por UNESCO, Kellner y Share?',
+      o: [
+        { x: 'Acceso y evaluación crítica, creación y expresión ética, y participación ciudadana.', c: true, r: 'UNESCO (2021) y Kellner y Share (2019) identifican tres componentes sustantivos: acceso y evaluación crítica, creación y expresión ética, y participación ciudadana.' },
+        { x: 'Descarga de datos, instalación de programas y edición de video.', r: 'Esas son tareas técnicas y no son las dimensiones sustantivas de la AMI. Las dimensiones son acceso y evaluación crítica, creación y expresión ética, y participación ciudadana.' },
+        { x: 'Censura mediática, control gubernamental y restricciones técnicas.', r: 'Esa opción no corresponde al planteamiento de UNESCO, Kellner y Share. Las dimensiones sustantivas son acceso y evaluación crítica, creación y expresión ética, y participación ciudadana.' }
+      ]
+    },
+    {
+      t: '¿Cuál es la respuesta estructural más efectiva frente a la desinformación según la UNESCO (2021)?',
+      o: [
+        { x: 'Aplicar únicamente restricciones técnicas y bloqueos de red.', r: 'La UNESCO (2021, p. 28) afirma que combatir la desinformación mediante restricciones técnicas es insuficiente.' },
+        { x: 'Empoderar a las personas mediante la alfabetización mediática para actuar como filtros críticos.', c: true, r: 'La UNESCO (2021, p. 28) señala que la respuesta estructural más efectiva radica en empoderar a las personas mediante la alfabetización mediática para que actúen como filtros críticos de la información.' },
+        { x: 'Prohibir el consumo de medios de comunicación tradicionales.', r: 'El planteamiento de la UNESCO (2021, p. 28) no propone prohibir el consumo de medios. La respuesta estructural más efectiva es empoderar a las personas mediante la alfabetización mediática.' }
+      ]
+    }
+  ];
+
+  var form = document.getElementById('quiz');
+  var estado = document.getElementById('estado-quiz');
+  var barra = document.getElementById('progreso');
+  var resultado = document.getElementById('resultado');
+  var letras = ['A', 'B', 'C'];
+  var respondidas = 0, aciertos = 0;
+
+  function construir() {
+    form.innerHTML = '';
+    respondidas = 0; aciertos = 0;
+    resultado.hidden = true;
+    preguntas.forEach(function (q, qi) {
+      var fs = document.createElement('fieldset');
+      fs.className = 'pregunta';
+      var lg = document.createElement('legend');
+      lg.innerHTML = '<small>Pregunta ' + (qi + 1) + ' de ' + preguntas.length + '</small>';
+      lg.appendChild(document.createTextNode(q.t));
+      fs.appendChild(lg);
+      var ops = document.createElement('div');
+      ops.className = 'opciones';
+      q.o.forEach(function (op, oi) {
+        var id = 'q' + qi + 'o' + oi;
+        var lab = document.createElement('label');
+        lab.className = 'opcion';
+        lab.setAttribute('for', id);
+        var inp = document.createElement('input');
+        inp.type = 'radio'; inp.name = 'q' + qi; inp.id = id; inp.value = oi;
+        var l = document.createElement('span'); l.className = 'letra'; l.setAttribute('aria-hidden', 'true'); l.textContent = letras[oi];
+        var tx = document.createElement('span'); tx.className = 'texto-op'; tx.textContent = op.x;
+        lab.appendChild(inp); lab.appendChild(l); lab.appendChild(tx);
+        ops.appendChild(lab);
+        inp.addEventListener('change', function () { responder(qi, oi, fs); });
+      });
+      fs.appendChild(ops);
+      var retro = document.createElement('div');
+      retro.className = 'retro'; retro.id = 'retro' + qi; retro.hidden = true;
+      retro.setAttribute('role', 'status'); retro.setAttribute('aria-live', 'polite');
+      fs.appendChild(retro);
+      form.appendChild(fs);
+    });
+    actualizar();
+  }
+
+  function responder(qi, oi, fs) {
+    var q = preguntas[qi];
+    var elegida = q.o[oi];
+    var labels = fs.querySelectorAll('.opcion');
+    var inputs = fs.querySelectorAll('input');
+    q.o.forEach(function (op, i) {
+      labels[i].classList.add('cerrada');
+      inputs[i].disabled = true;
+      if (op.c) labels[i].classList.add('correcta');
+    });
+    labels[oi].classList.add('elegida');
+    var retro = fs.querySelector('.retro');
+    var ok = !!elegida.c;
+    if (!ok) labels[oi].classList.add('incorrecta');
+    retro.className = 'retro ' + (ok ? 'bien' : 'mal');
+    retro.innerHTML = '';
+    var s = document.createElement('strong');
+    s.textContent = ok ? 'Respuesta correcta' : 'Respuesta incorrecta. La opción correcta aparece marcada en verde.';
+    var p = document.createElement('p');
+    p.textContent = elegida.r;
+    retro.appendChild(s); retro.appendChild(p);
+    retro.hidden = false;
+    respondidas++; if (ok) aciertos++;
+    actualizar();
+  }
+
+  function actualizar() {
+    estado.textContent = 'Respondidas: ' + respondidas + ' de ' + preguntas.length + ' · Aciertos: ' + aciertos;
+    barra.style.width = (respondidas / preguntas.length * 100) + '%';
+    if (respondidas === preguntas.length) {
+      var msg = aciertos === preguntas.length
+        ? 'Completó la autoevaluación con ' + aciertos + ' de ' + preguntas.length + ' aciertos. Dominó los conceptos clave del recurso.'
+        : 'Completó la autoevaluación con ' + aciertos + ' de ' + preguntas.length + ' aciertos. Revise la pestaña "Componentes y Citas Clave" y las respuestas marcadas, y vuelva a intentarlo.';
+      resultado.textContent = msg;
+      resultado.hidden = false;
+    }
+  }
+
+  document.getElementById('reiniciar').addEventListener('click', function () {
+    construir();
+    document.getElementById('t-quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  construir();
+})();
+</script>
+
+</body>
+</html>
